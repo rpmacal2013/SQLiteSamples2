@@ -21,11 +21,28 @@ namespace DemoLibrary
             }
         }
 
+        public static List<ClienteModel> CargaClientes()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(CargaConnectionString()))
+            {
+                var output = cnn.Query<ClienteModel>("select * from Clientes", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
         public static void GuardaEmpleado(EmpleadoModel empleado)
         {
             using (IDbConnection cnn = new SQLiteConnection(CargaConnectionString()))
             {
                 cnn.Execute("insert into Empleados (NombreEmpleado, Puesto, FechaIngreso) values (@nombreEmpleado, @puesto, @fechaIngreso)", empleado);
+            }
+        }
+
+        public static void GuardaCliente(ClienteModel cliente)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(CargaConnectionString()))
+            {
+                cnn.Execute("insert into Clientes (ClaveCliente, NombreCliente, Email) values (@claveCliente, @nombreCliente, @email)", cliente);
             }
         }
 

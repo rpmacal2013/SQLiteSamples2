@@ -22,7 +22,7 @@ namespace SQLiteSample1
 
             if (!File.Exists(".\\db\\DemoDB.db"))
 
-            if (!File.Exists("C:\\temp\\dbtmp\\demodb.db"))
+            //if (!File.Exists("C:\\temp\\dbtmp\\demodb.db"))
                 {
             MessageBox.Show("La BD no existe. \n Application.StartupPath: " + Application.StartupPath + "\n\n System.IO.Directory.GetCurrentDirectory: " + Directory.GetCurrentDirectory()
             + "\n\n Environment.CurrentDirectory: " + Environment.CurrentDirectory

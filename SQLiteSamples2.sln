@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLibrary", "DemoLibrary\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteSample1", "SQLiteSample1\SQLiteSample1.csproj", "{2E5F3410-0C8F-4216-8ED8-52AB08645BA7}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SQLiteSampleSetup2", "SQLiteSampleSetup2\SQLiteSampleSetup2.vdproj", "{E4C2511B-FD39-45BE-A5FE-F17A80959E60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{2E5F3410-0C8F-4216-8ED8-52AB08645BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E5F3410-0C8F-4216-8ED8-52AB08645BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E5F3410-0C8F-4216-8ED8-52AB08645BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C2511B-FD39-45BE-A5FE-F17A80959E60}.Debug|Any CPU.ActiveCfg = Debug
+		{E4C2511B-FD39-45BE-A5FE-F17A80959E60}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

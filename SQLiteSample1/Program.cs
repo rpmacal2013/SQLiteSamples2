@@ -16,7 +16,7 @@ namespace SQLiteSample1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Empleados());
+            Application.Run(new frmPrincipal());
         }
     }
 }
